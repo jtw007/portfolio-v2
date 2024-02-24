@@ -1,21 +1,45 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
+import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai'
 
 const NavBar = () => {
+    const [nav, setNav] = useState(false)
+
+    const handleNav = () => {
+        setNav(!nav)
+    }
+
+    const closeNav = () => {
+        setNav(false)
+    }
     
     return (
-        <div className='flex justify-between items-center w-full mx-auto px-10 border-8 border-sky-500'>
+        <div className='flex justify-between items-center h-24 w-full mx-auto px-10 shadow-md bg-[#1d6896] text-white'>
             <a href='/'>
-                <div className=''>
-                    <h1>joshwu.dev</h1>
+                <div className='flex flex-row'>
+                    <h1 className=''>joshwu.dev</h1>
                 </div>
             </a>
 
-            <ul className=''>
-                <li className=''>About</li>
-                <li className=''>Projects</li>
-                <li className=''>Contact</li>
-                <button className=''>Resume</button>
+            <ul className='hidden md:flex'>
+                <button className='p-4 text-lg'>About</button>
+                <button className='p-4 text-lg'>Projects</button>
+                <button className='p-4 text-lg'>Contact</button>
+                <button className='p-4 text-lg border'>Resume</button>
+            </ul>
+
+            {/* hamburger menu navbar, only shows on small screens */}
+            <div onClick={handleNav} className='block md:hidden'>
+                {!nav ? <AiOutlineMenu size={20} /> : <AiOutlineClose size={20} />}
+            </div>
+
+            <ul className={nav ? 'fixed top-24 left-0 w-full h-full overflow-hidden ease-in-out duration-500 border-r-black-900 bg-[#1d6896] md:hidden' : 'ease-in-out duration-500 fixed top-[-100%]'}>
+                <button className='py-7 text-center w-full'>About</button>
+                <button className='py-7 text-center w-full'>Projects</button>
+                <button className='py-7 text-center w-full'>Contact</button>
+                <div className='w-full flex justify-center'>
+                    <button className='py-5 text-center w-1/4 border'>Resume</button>
+                </div>
             </ul>
 
         </div>
