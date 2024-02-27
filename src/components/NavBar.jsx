@@ -25,7 +25,7 @@ const NavBar = () => {
                 <button className='p-4 text-lg'>About</button>
                 <button className='p-4 text-lg'>Projects</button>
                 <button className='p-4 text-lg'>Contact</button>
-                <button className='p-4 text-lg border'>Resume</button>
+                <a className='p-4 text-lg border' href='https://drive.google.com/file/d/1svi6e7Y2bkKLss2KFIgZzzuLBNNOzeH_/view?usp=drive_link' target='_blank' rel='noopener noreferrer'>Resume</a>
             </ul>
 
             {/* hamburger menu navbar, only shows on small screens */}
@@ -38,7 +38,7 @@ const NavBar = () => {
                 <button className='py-7 text-center w-full'>Projects</button>
                 <button className='py-7 text-center w-full'>Contact</button>
                 <div className='w-full flex justify-center'>
-                    <button className='py-5 text-center w-1/4 border'>Resume</button>
+                    <a className='py-5 text-center w-1/4 border' href='https://drive.google.com/file/d/1svi6e7Y2bkKLss2KFIgZzzuLBNNOzeH_/view?usp=drive_link' target='_blank' rel='noopener noreferrer'>Resume</a>
                 </div>
             </ul>
 
