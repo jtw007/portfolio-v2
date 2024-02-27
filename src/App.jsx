@@ -6,6 +6,7 @@ import {
 
 // components/pages import
 import NavBar from './components/NavBar'
+import Home from './components/pages/Home'
 
 function App() {
 
@@ -13,7 +14,11 @@ function App() {
     <Router>
       <div className='App'>
         <NavBar />
-
+        <div className='routes'>
+          <Routes>
+            <Route path='/' element={ <Home /> } />
+          </Routes>
+        </div>
       </div>
     </Router>
   )

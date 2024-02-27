@@ -1,8 +1,10 @@
-
+import About from "./About";
 
 const Home = () => {
     return (
-        <div>Home</div>
+        <div className='body'>
+            <About /> 
+        </div>
     )
 }
 
