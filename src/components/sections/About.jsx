@@ -8,7 +8,7 @@ const About = () => {
 
             <div className="flex lg:flex-row xs:flex-col items-center self-center justify-around m-7 xs:max-w-[330px] sm:max-w-[375px] md:max-w-[1000px] lg:max-w-[1200px] xl:max-w-[1500px]">
 
-                <img className="rounded-full relative p-5 max-w-[400px]" src='../../../photo-assets/profilePicture1.png' alt='photo of me'/>
+                <img className="rounded-full relative shadow-2xl mx-5 max-w-[400px]" src='../../../photo-assets/profilePicture1.png' alt='photo of me'/>
 
                 <div className="">
                     <p className="text-xl leading-8 py-1">
