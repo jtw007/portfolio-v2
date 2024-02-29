@@ -6,7 +6,7 @@ import {
 
 // components/pages import
 import NavBar from './components/NavBar'
-import Home from './components/pages/Home'
+import Home from './components/sections/Home'
 
 function App() {
 
