@@ -22,7 +22,7 @@ const About = () => {
 
             </div>
             {/* skills container */}
-            <div className="">
+            <div className="border border-blue-700 w-full xs:max-w-[330px] sm:max-w-[375px] md:max-w-[1000px] lg:max-w-[1200px] xl:max-w-[1500px] self-center">
                 <p className="flex justify-center text-2xl">Current Stack 📚</p>
                 <Skills />
             </div>
