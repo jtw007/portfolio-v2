@@ -9,7 +9,7 @@ const About = () => {
             {/* about and photo container */}
             <div className="flex lg:flex-row xs:flex-col items-center self-center justify-around m-7 xs:max-w-[330px] sm:max-w-[375px] md:max-w-[1000px] lg:max-w-[1200px] xl:max-w-[1500px]">
 
-                <img className="rounded-full relative shadow-2xl mx-5 my-2 max-w-[400px] xs:max-w-[300px]" src='../../../photo-assets/profilePicture1.png' alt='photo of me'/>
+                <img className="rounded-full shadow-2xl mx-5 my-2 max-w-[400px] xs:max-w-[300px]" src='../../../photo-assets/profilePicture1.png' alt='photo of me'/>
 
                 <div className="">
                     <p className="text-xl py-1 xs:text-base">
@@ -22,7 +22,7 @@ const About = () => {
 
             </div>
             {/* skills container */}
-            <div className="border border-blue-700 w-full xs:max-w-[330px] sm:max-w-[375px] md:max-w-[1000px] lg:max-w-[1200px] xl:max-w-[1500px] self-center">
+            <div className="w-full xs:max-w-[330px] sm:max-w-[375px] md:max-w-[1000px] lg:max-w-[1200px] xl:max-w-[1500px] self-center">
                 <p className="flex justify-center text-2xl">Current Stack 📚</p>
                 <Skills />
             </div>
