@@ -1,18 +1,31 @@
+import { Typewriter } from 'react-simple-typewriter'
 
 const Hero = () => {
     return (
-        <div className="p-20 flex flex-col items-center bg-red-500">
+        <div className="lg:p-40 xs:py-20 flex flex-col items-center">
 
             <div className="py-10">
                 <h1 className="text-6xl">Josh Wu</h1>
             </div>
 
-            <div className="py-2">
-                <h1 className="text-2xl">Frontend Developer</h1>
+            <div className="py-4">
+                {/* <h1 className="text-2xl">Frontend Developer</h1> */}
+                <span className='lg:text-2xl xs:text-xl'>
+                    <Typewriter 
+                        words={['Frontend Developer']}
+                        loop={0 | false}
+                        cursor
+                        cursorStyle='_'
+                        typeSpeed={100}
+                        deleteSpeed={70}
+                        delaySpeed={1500}
+                    />
+                </span>
+                
             </div>
 
-            <div className="py-2">
-                <h1 className="text-2xl">Let's build something together!</h1>
+            <div className="py-4">
+                <h1 className="lg:text-2xl xs:text-xl">Let's build something together!</h1>
             </div>
 
         </div>
