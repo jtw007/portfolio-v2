@@ -1,6 +1,6 @@
 import { useState } from 'react'
-import { Link } from 'react-router-dom'
 import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai'
+import { Link, animateScroll as scroll } from 'react-scroll'
 
 const NavBar = () => {
     const [nav, setNav] = useState(false)
@@ -22,9 +22,36 @@ const NavBar = () => {
             </a>
 
             <ul className='hidden md:flex'>
-                <button className='p-4 text-lg'>About</button>
-                <button className='p-4 text-lg'>Projects</button>
-                <button className='p-4 text-lg'>Contact</button>
+                <Link
+                    className='p-4 text-lg cursor-pointer'
+                    activeClass="active"
+                    to="about"
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    duration={500}
+                >About</Link>
+
+                <Link
+                    className='p-4 text-lg cursor-pointer'
+                    activeClass="active"
+                    to="projects"
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    duration={500}
+                >Projects</Link>
+
+                <Link
+                    className='p-4 text-lg cursor-pointer'
+                    activeClass="active"
+                    to="contact"
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    duration={500}
+                >Contact</Link>
+
                 <a className='p-4 text-lg border' href='https://drive.google.com/file/d/1svi6e7Y2bkKLss2KFIgZzzuLBNNOzeH_/view?usp=drive_link' target='_blank' rel='noopener noreferrer'>Resume</a>
             </ul>
 
