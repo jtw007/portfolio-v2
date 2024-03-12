@@ -4,7 +4,7 @@ const About = () => {
     return (
         <div className="flex w-full flex-col xs:my-5 lg:my-16" id='about'>
             <div className="flex py-5 px-7 w-full xs:max-w-[330px] sm:max-w-[375px] md:max-w-[1000px] lg:max-w-[1200px] xl:max-w-[1500px] self-center">
-                <h1 className="font-bold text-3xl">About Me</h1>
+                <h1 className="font-bold text-3xl">JoshWu.About</h1>
             </div>
             {/* about and photo container */}
             <div className="flex lg:flex-row xs:flex-col items-center self-center justify-around m-7 xs:max-w-[330px] sm:max-w-[375px] md:max-w-[1000px] lg:max-w-[1200px] xl:max-w-[1500px]">

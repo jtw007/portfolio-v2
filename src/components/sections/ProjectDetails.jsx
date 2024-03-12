@@ -1,8 +1,11 @@
-
+import { projectsList } from "../../portfolio-data/projectsList"
+import { useParams } from "react-router-dom"
 
 const ProjectDetails = () => {
     return (
-        <div>ProjectDetails</div>
+        <div className="">
+
+        </div>
     )
 }
 
