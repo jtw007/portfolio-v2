@@ -1,7 +1,10 @@
 import { projectsList } from '../../portfolio-data/projectsList.js'
 import { Link } from 'react-router-dom'
+import { useState } from 'react';
 
 const Projects = () => {
+    const [ style, setStyle ] = useState({})
+
     return (
         <div className='flex w-full flex-col xs:my-5 lg:my-16' id='projects'>
 
@@ -13,9 +16,9 @@ const Projects = () => {
                 {projectsList.map((project, idx) => {
                     return (
                         <Link key={`projects-${idx}`} to={`/${project.slug}`}> 
-                            <div className='flex flex-row justify-center items-center bg-no-repeat bg-center bg-cover xl:h-[300px] xl:w-[500px] xl:mx-5 lg:mx-5 md:h-[200px] md:w-[350px] md:my-3 md:mx-2 xs:h-[200px] xs:w-[320px] xs:my-2' style={{backgroundImage:`url(${project.img})`}}
+                            <div className='flex flex-row justify-center items-center bg-no-repeat bg-center bg-cover xl:h-[300px] xl:w-[500px] xl:mx-5 lg:mx-5 md:h-[200px] md:w-[350px] md:my-3 md:mx-2 xs:h-[200px] xs:w-[320px] xs:my-2 group' style={{backgroundImage:`url(${project.img})`}}
                             >
-                                <span className='lg:hidden xl:inline'>
+                                <span className='lg:hidden xs:hidden xl:group-hover:inline'>
                                     {project.name}
                                 </span>
                             </div>
