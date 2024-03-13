@@ -2,7 +2,7 @@ import '../index.css'
 
 const Skills = () => {
     return (
-        <div className="xs:max-w-[330px] sm:max-w-[375px] md:max-w-[1000px] lg:max-w-[1200px] xl:max-w-[1500px] lg:flex lg:flex-row xs:grid xs:grid-cols-3 my-5 xs:place-items-center lg:items-center lg:justify-between lg:px-5">
+        <div className="xs:max-w-[330px] sm:max-w-[375px] md:max-w-[1000px] lg:max-w-[1200px] xl:max-w-[1500px] xs:grid xs:grid-cols-3 my-5 xs:place-items-center lg:grid-cols-5 lg:items-center lg:px-5 xl:items-center xl:justify-between xl:px-5 xl:flex xl:flex-row">
 
             <div className='flex justify-center items-center flex-col text-[15px] h-[110px] w-[110px] rounded-full my-2 shadow-xl lg:hover:scale-125 lg:duration-500'>
                 <i className="devicon-html5-plain colored text-2xl"></i>
