@@ -16,12 +16,16 @@ const ProjectDetails = () => {
     return (
         <div className="">
             <header className="">
-                <div>
+                <div className="">
                     <img 
                         className=""
                         src={project.img}
                         alt='project image'
                     />
+
+                    <div className="">
+                        <h1 className="">{project.name}</h1>
+                    </div>
                 </div>
             </header>
         </div>
