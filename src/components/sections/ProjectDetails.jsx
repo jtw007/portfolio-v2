@@ -62,6 +62,9 @@ const ProjectDetails = () => {
                         </span>
                     </li>
                 </ul>
+                <p className="">
+                    {project.desc}
+                </p>
             </div>
         </div>
     )
