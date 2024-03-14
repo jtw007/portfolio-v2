@@ -15,6 +15,7 @@ const ProjectDetails = () => {
 
     return (
         <div className="">
+            {/* header start */}
             <header className="">
                 <div className="">
                     <img 
@@ -26,8 +27,42 @@ const ProjectDetails = () => {
                     <div className="">
                         <h1 className="">{project.name}</h1>
                     </div>
+
+                    <div className="">
+                        <h2 className="">{project.subheader}</h2>
+                    </div>
+                    {/* buttons */}
+                    <div className="">
+                        <button 
+                            className=""
+                            onClick={() => openSite()}
+                        >
+                            Deployed Site
+                        </button>
+
+                        <button 
+                            className=""
+                            onClick={() => openGithub()}
+                        >
+                            Github Repo
+                        </button>
+                    </div>
+
                 </div>
             </header>
+            {/* header end */}
+            <div className="">
+                <h3 className="">
+                    Built with
+                </h3>
+                <ul className="">
+                    <li className="" key={`project`}>
+                        <span className="">
+                            {project.stacks.toString().split(',').join(', ')}
+                        </span>
+                    </li>
+                </ul>
+            </div>
         </div>
     )
 }

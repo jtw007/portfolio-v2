@@ -8,18 +8,12 @@ export const projectsList = [
         slug: 'spiritfinder',
         img: spiritFinder,
         name: 'SpiritFinder',
-        subheader:`A frontend app rendering data utilizing an API`,
+        subheader:`A frontend app rendering data pulled from an API`,
         desc: `SpiritFinder is a frontend app built with Vite, React, and styled with Tailwind. It uses a free API service from API Ninjas that pulls cocktail recipes and displays what the user searches. `,
         stacks: [
-            "HTML",
-            "CSS",
-            "MongoDB",
-            "Express",
-            "React",
-            "NodeJs",
-            "Bootstrap",
-            'React-Bootstrap',
-            'MDBootstrap'
+            "ViteJS",
+            "ReactJS",
+            "Tailwind CSS",
         ],
         siteURL: 'https://spiritfinder.netlify.app/',
         githubURL: 'https://github.com/jtw007/cocktail-api-v2-frontend'
@@ -33,9 +27,11 @@ export const projectsList = [
         subheader:`A 2010's FaceBook themed blog app`,
         desc: `McFaceBook is a MERN stack app built by a team of four developers. Users can create a new account, sign in, create, edit, and delete posts.`,
         stacks: [
-            "ViteJS",
             "ReactJS",
-            "Tailwind CSS",
+            "Express",
+            "NodeJS",
+            "MongoDB",
+            "Bootstrap/React-Bootstrap/MDBootstrap",
         ],
         siteURL: 'https://mcfacebook.netlify.app/',
         githubURL: 'https://github.com/jtw007/domino-client'
