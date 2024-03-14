@@ -14,12 +14,12 @@ const ProjectDetails = () => {
     }
 
     return (
-        <div className="">
+        <div className="my-5">
             {/* header start */}
-            <header className="">
-                <div className="">
+            <header className="py-[10px] px-[14px]">
+                <div className="max-w-[72rem] flex flex-row justify-between">
                     <img 
-                        className=""
+                        className="max-w-[500px]"
                         src={project.img}
                         alt='project image'
                     />
@@ -34,14 +34,14 @@ const ProjectDetails = () => {
                     {/* buttons */}
                     <div className="">
                         <button 
-                            className=""
+                            className="border"
                             onClick={() => openSite()}
                         >
                             Deployed Site
                         </button>
 
                         <button 
-                            className=""
+                            className="border"
                             onClick={() => openGithub()}
                         >
                             Github Repo
