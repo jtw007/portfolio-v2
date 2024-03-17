@@ -12,7 +12,7 @@ const Projects = () => {
                 <h1 className="font-bold text-3xl">JoshWu.Projects</h1>
             </div>
 
-            <div className='w-full xs:max-w-[330px] sm:max-w-[375px] md:max-w-[1000px] lg:max-w-[1200px] xl:max-w-[1500px] self-center flex lg:flex-row lg:justify-center md:flex-row md:justify-center md:px-2  xs:flex-col xs:items-center'>
+            <div className='w-full xs:max-w-[330px] sm:max-w-[375px] md:max-w-[1000px] lg:max-w-[1200px] xl:max-w-[1500px] self-center flex lg:flex-row lg:justify-center md:flex-row md:justify-center md:px-2 xs:flex-col xs:items-center xs:py-5'>
                 {projectsList.map((project, idx) => {
                     return (
                         <Link key={`projects-${idx}`} to={`/${project.slug}`} className=' group'> 
