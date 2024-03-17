@@ -5,7 +5,7 @@ const Hero = () => {
         <div className="lg:p-40 xs:py-20 flex flex-col items-center">
 
             <div className="py-10">
-                <h1 className="text-6xl">Josh Wu</h1>
+                <h1 className="text-6xl">Josh Wu.dev</h1>
             </div>
 
             <div className="py-4">

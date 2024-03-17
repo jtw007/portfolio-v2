@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai'
 import { Link, animateScroll as scroll } from 'react-scroll'
+import Icon from '../../public/icons/icon.svg'
 
 const NavBar = () => {
     const [nav, setNav] = useState(false)
@@ -17,7 +18,11 @@ const NavBar = () => {
         <div className='flex justify-between items-center h-24 w-full mx-auto px-10 shadow-lg bg-[#1d6896] text-white xs:fixed xl:static'>
             <a href='/'>
                 <div className='flex flex-row'>
-                    <h1 className='text-3xl'>joshwu.dev</h1>
+                    <img 
+                        src={Icon} 
+                        className='h-[40px] w-[40px]'
+                    />
+                    {/* <h1 className='text-3xl'>joshwu.dev</h1> */}
                 </div>
             </a>
 
