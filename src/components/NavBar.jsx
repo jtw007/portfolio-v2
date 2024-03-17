@@ -61,9 +61,36 @@ const NavBar = () => {
             </div>
 
             <ul className={nav ? 'fixed top-24 left-0 w-full h-full overflow-hidden ease-in-out duration-500 border-r-black-900 bg-[#1d6896] md:hidden' : 'ease-in-out duration-500 fixed top-[-100%]'}>
-                <button className='py-7 text-center w-full'>About</button>
-                <button className='py-7 text-center w-full'>Projects</button>
-                <button className='py-7 text-center w-full'>Contact</button>
+                <Link
+                    className='py-7 flex justify-center w-full'
+                    activeClass="active"
+                    to="about"
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    duration={500}
+                >About</Link>
+
+                <Link
+                    className='py-7 flex justify-center'
+                    activeClass="active"
+                    to="projects"
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    duration={500}
+                >Projects</Link>
+
+                <Link
+                    className='py-7 flex justify-center'
+                    activeClass="active"
+                    to="contact"
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    duration={500}
+                >Contact</Link>
+                
                 <div className='w-full flex justify-center'>
                     <a className='py-5 text-center w-1/4 border' href='https://drive.google.com/file/d/1svi6e7Y2bkKLss2KFIgZzzuLBNNOzeH_/view?usp=drive_link' target='_blank' rel='noopener noreferrer'>Resume</a>
                 </div>
