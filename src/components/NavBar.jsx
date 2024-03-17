@@ -14,7 +14,7 @@ const NavBar = () => {
     }
     
     return (
-        <div className='flex justify-between items-center h-24 w-full mx-auto px-10 shadow-lg bg-[#1d6896] text-white'>
+        <div className='flex justify-between items-center h-24 w-full mx-auto px-10 shadow-lg bg-[#1d6896] text-white xs:fixed xl:static'>
             <a href='/'>
                 <div className='flex flex-row'>
                     <h1 className='text-3xl'>joshwu.dev</h1>
@@ -60,9 +60,10 @@ const NavBar = () => {
                 {!nav ? <AiOutlineMenu size={20} /> : <AiOutlineClose size={20} />}
             </div>
 
-            <ul className={nav ? 'fixed top-24 left-0 w-full h-full overflow-hidden ease-in-out duration-500 border-r-black-900 bg-[#1d6896] md:hidden' : 'ease-in-out duration-500 fixed top-[-100%]'}>
+            <ul className={nav ? 'fixed top-24 right-0 w-[75%] h-full overflow-hidden ease-in-out duration-500 border-r-black-900 bg-[#1d6896] md:hidden' : 'ease-in-out duration-500 fixed right-[-100%]'}>
                 <Link
-                    className='py-7 flex justify-center w-full'
+                    className='py-7 flex justify-center'
+                    onClick={closeNav}
                     activeClass="active"
                     to="about"
                     spy={true}
@@ -73,6 +74,7 @@ const NavBar = () => {
 
                 <Link
                     className='py-7 flex justify-center'
+                    onClick={closeNav}
                     activeClass="active"
                     to="projects"
                     spy={true}
@@ -83,6 +85,7 @@ const NavBar = () => {
 
                 <Link
                     className='py-7 flex justify-center'
+                    onClick={closeNav}
                     activeClass="active"
                     to="contact"
                     spy={true}
