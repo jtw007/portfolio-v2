@@ -25,34 +25,35 @@ const ProjectDetails = () => {
                     />
 
                     <div className="flex flex-col justify-start items-center gap-10">
-                        <p className="bold text-4xl leading-4 tracking-tighter text-center">{project.name}</p>
+                        <p className="bold text-4xl text-center">{project.name}</p>
                     </div>
 
                     <div className="flex flex-col gap-5 items-center">
                         <p className="block text-center">{project.subheader}</p>
                     </div>
                     {/* buttons */}
-                    <div className="">
+                    <div className="flex flex-row gap-3 ">
                         <button 
-                            className="border"
+                            className="border rounded-[15px] leading-4 font-bold uppercase py-2 px-5"
                             onClick={() => openSite()}
                         >
                             Deployed Site
                         </button>
 
                         <button 
-                            className="border"
+                            className="border rounded-[15px] leading-4 font-bold uppercase py-2 px-5"
                             onClick={() => openGithub()}
                         >
                             Github Repo
                         </button>
                     </div>
+                    
 
                 </div>
             </header>
             {/* header end */}
-            <div className="">
-                <p className="">
+            <div className="max-w-[56rem] flex flex-col items-center gap-9">
+                <p className="text-2xl font-bold">
                     Built with
                 </p>
                 <ul className="">
