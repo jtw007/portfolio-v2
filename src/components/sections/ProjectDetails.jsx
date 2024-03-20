@@ -14,7 +14,7 @@ const ProjectDetails = () => {
     }
 
     return (
-        <div className="lg:my-5 lg:py-16 xs:pt-[150px]">
+        <div className="xl:my-5 xl:py-16 xs:pt-[150px]">
             {/* header start */}
             <header className="flex justify-center">
                 <div className="flex justify-between lg:px-5 xs:flex-col lg:flex-row">
