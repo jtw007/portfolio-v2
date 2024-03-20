@@ -16,24 +16,24 @@ const ProjectDetails = () => {
     return (
         <div className="my-5 py-16">
             {/* header start */}
-            <header className="py-[10px] px-[14px] flex  justify-center border border-red-500">
-                <div className="flex justify-between px-5 border-2 border-blue-500">
+            <header className="py-[10px] px-[14px] flex  justify-center">
+                <div className="flex justify-between px-5">
                     <img 
                         className="max-w-[500px]"
                         src={project.img}
                         alt='project image'
                     />
-                    <div className="flex flex-col px-5 border-2 border-green-700">
+                    <div className="flex flex-col px-5">
                         
                         <div className="flex flex-col justify-start items-center gap-10">
-                            <p className="bold text-4xl text-center py-5">{project.name}</p>
+                            <p className="font-bold text-4xl text-center py-5">{project.name}</p>
                         </div>
 
                         <div className="flex flex-col gap-5 items-center">
                             <p className="block text-center py-3">{project.subheader}</p>
                         </div>
                         {/* buttons */}
-                        <div className="flex flex-row gap-3 my-2">
+                        <div className="flex flex-row gap-3 py-4">
                             <button 
                                 className="border rounded-[15px] leading-4 font-bold uppercase py-2 px-5"
                                 onClick={() => openSite()}
