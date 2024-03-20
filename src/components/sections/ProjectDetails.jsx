@@ -14,12 +14,12 @@ const ProjectDetails = () => {
     }
 
     return (
-        <div className="my-5 py-16">
+        <div className="lg:my-5 lg:py-16 xs:pt-[150px]">
             {/* header start */}
-            <header className="py-[10px] px-[14px] flex  justify-center">
-                <div className="flex justify-between px-5">
+            <header className="flex justify-center">
+                <div className="flex justify-between lg:px-5 xs:flex-col lg:flex-row">
                     <img 
-                        className="max-w-[500px]"
+                        className="lg:max-w-[500px] xs:max-w-[325px] xs:self-center"
                         src={project.img}
                         alt='project image'
                     />
@@ -55,7 +55,7 @@ const ProjectDetails = () => {
             </header>
             {/* header end */}
             <div className="flex flex-col items-center my-3 py-5">
-                <div className="max-w-[56rem] gap-9 text-center">
+                <div className="lg:max-w-[56rem] gap-9 text-center">
                     <p className="text-2xl font-bold">
                         Built with:
                     </p>
@@ -69,7 +69,7 @@ const ProjectDetails = () => {
                             </span>
                         </li>
                     </ul>
-                    <p className="text-center px-8 py-2">
+                    <p className="text-center px-8 lg:py-2 xs:py-3">
                         {project.desc}
                     </p>
                 </div>
