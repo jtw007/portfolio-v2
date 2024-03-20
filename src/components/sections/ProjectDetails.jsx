@@ -54,24 +54,28 @@ const ProjectDetails = () => {
                 </div>
             </header>
             {/* header end */}
-            <div className="max-w-[56rem] flex flex-col items-center gap-9 border border-yellow-600">
-                <p className="text-2xl font-bold">
-                    Built with
-                </p>
-                <ul className="gap-7 flex justify-center flex-wrap">
-                    <li 
-                        className="flex flex-col justify-center items-center gap-2" 
-                        key={`project`}
-                    >
-                        <span className="font-bold text-xl">
-                            {project.stacks.toString().split(',').join(', ')}
-                        </span>
-                    </li>
-                </ul>
-                <p className="text-center px-8">
-                    {project.desc}
-                </p>
+            <div className="flex flex-col items-center my-3 py-5">
+                <div className="max-w-[56rem] gap-9 text-center">
+                    <p className="text-2xl font-bold">
+                        Built with:
+                    </p>
+                    <ul className="gap-7 flex justify-center flex-wrap">
+                        <li 
+                            className="flex flex-col justify-center items-center gap-2" 
+                            key={`project`}
+                        >
+                            <span className="font-bold text-xl">
+                                {project.stacks.toString().split(',').join(', ')}
+                            </span>
+                        </li>
+                    </ul>
+                    <p className="text-center px-8 py-2">
+                        {project.desc}
+                    </p>
+                </div>
+                
             </div>
+
         </div>
     )
 }
