@@ -1,4 +1,5 @@
-
+import githubIcon from '../../../public/icons/github.png'
+import linkedInIcon from '../../../public/icons/linkedin.png'
 
 const Contact = () => {
     return (
@@ -8,8 +9,8 @@ const Contact = () => {
                     <h1 className="font-bold text-3xl">Connect with me!</h1>
                 </div>
                 <div className="flex justify-center">
-                    <button>LinkedIn</button>
-                    <button>Github</button>
+                    <img src={githubIcon} className=''/>
+                    <img src={linkedInIcon} className=''/>
                 </div>
             </div>
             
