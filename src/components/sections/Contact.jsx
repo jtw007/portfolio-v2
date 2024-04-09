@@ -8,9 +8,22 @@ const Contact = () => {
                 <div className="flex justify-center">
                     <h1 className="font-bold text-3xl">Connect with me!</h1>
                 </div>
-                <div className="flex justify-center">
-                    <img src={githubIcon} className=''/>
-                    <img src={linkedInIcon} className=''/>
+                <div className="flex justify-center my-2">
+                    <a href='https://github.com/jtw007' target='_blank' rel='noopener noreferrer'>
+                        <img 
+                            src={githubIcon} 
+                            role='button'
+                            className='h-[50px] w-[50px] mx-5'
+                        />
+                    </a>
+                    <a href='https://www.linkedin.com/in/joshwudev/' target='_blank' rel='noopener noreferrer'>
+                        <img 
+                            src={linkedInIcon} 
+                            role='button'
+                            className='h-[50px] w-[50px] mx-5'
+                        />
+                    </a>
+                        
                 </div>
             </div>
             
