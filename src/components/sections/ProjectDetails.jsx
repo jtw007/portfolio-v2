@@ -1,5 +1,6 @@
 import { projectsList } from "../../portfolio-data/projectsList"
 import { useParams } from "react-router-dom"
+import { Link } from 'react-router-dom'
 
 const ProjectDetails = () => {
     const { slug } = useParams()
@@ -75,7 +76,7 @@ const ProjectDetails = () => {
             </div>
 
             <div className="">
-                <button><a href='/'>Back to Home</a></button>
+            <Link to={{ pathname: '/', hash: 'projects' }}>Back to Home</Link>
             </div>
 
         </div>

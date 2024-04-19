@@ -1,9 +1,19 @@
 import { projectsList } from '../../portfolio-data/projectsList.js'
 import { Link } from 'react-router-dom'
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 const Projects = () => {
     const [ style, setStyle ] = useState({})
+
+    useEffect(() => {
+        // Scroll to the section if there's a hash in the URL
+        if (window.location.hash) {
+            const element = document.querySelector(window.location.hash);
+            if (element) {
+                element.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+    }, []);
 
     return (
         <div className='flex w-full flex-col xs:my-5 lg:my-16' id='projects'>
