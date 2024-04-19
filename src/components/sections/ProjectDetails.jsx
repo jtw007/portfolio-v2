@@ -49,9 +49,8 @@ const ProjectDetails = () => {
                             </button>
                         </div>
                     </div>
-                    
-                    
                 </div>
+
             </header>
             {/* header end */}
             <div className="flex flex-col items-center my-3 py-5">
@@ -73,7 +72,10 @@ const ProjectDetails = () => {
                         {project.desc}
                     </p>
                 </div>
-                
+            </div>
+
+            <div className="">
+                <button><a href='/'>Back to Home</a></button>
             </div>
 
         </div>
