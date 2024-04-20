@@ -75,8 +75,8 @@ const ProjectDetails = () => {
                 </div>
             </div>
 
-            <div className="">
-            <Link to={{ pathname: '/', hash: 'projects' }}>Back to Home</Link>
+            <div className="flex justify-center">
+                <Link className='border rounded-[15px] leading-4 font-bold uppercase py-5 px-5' to={{ pathname: '/', hash: 'projects' }}>Back to Home</Link>
             </div>
 
         </div>
