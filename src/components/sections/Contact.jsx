@@ -13,14 +13,14 @@ const Contact = () => {
                         <img 
                             src={githubIcon} 
                             role='button'
-                            className='h-[50px] w-[50px] mx-5'
+                            className='h-[50px] w-[50px] mx-5 lg:hover:scale-125 lg:duration-500'
                         />
                     </a>
                     <a href='https://www.linkedin.com/in/joshwudev/' target='_blank' rel='noopener noreferrer'>
                         <img 
                             src={linkedInIcon} 
                             role='button'
-                            className='h-[50px] w-[50px] mx-5'
+                            className='h-[50px] w-[50px] mx-5 lg:hover:scale-125 lg:duration-500'
                         />
                     </a>
                         
