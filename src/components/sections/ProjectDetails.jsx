@@ -36,14 +36,14 @@ const ProjectDetails = () => {
                         {/* buttons */}
                         <div className="flex flex-row gap-3 py-4">
                             <button 
-                                className="border rounded-[15px] leading-4 font-bold uppercase py-2 px-5"
+                                className="border rounded-default leading-4 font-bold uppercase py-2 px-5"
                                 onClick={() => openSite()}
                             >
                                 Deployed Site
                             </button>
 
                             <button 
-                                className="border rounded-[15px] leading-4 font-bold uppercase py-2 px-5"
+                                className="border rounded-default leading-4 font-bold uppercase py-2 px-5"
                                 onClick={() => openGithub()}
                             >
                                 Github Repo
@@ -76,7 +76,7 @@ const ProjectDetails = () => {
             </div>
 
             <div className="flex justify-center">
-                <Link className='border rounded-[15px] leading-4 font-bold uppercase py-5 px-5' to={{ pathname: '/', hash: 'projects' }}>Back to Home</Link>
+                <Link className='border rounded-default leading-4 font-bold uppercase py-5 px-5' to={{ pathname: '/', hash: 'projects' }}>Back to Home</Link>
             </div>
 
         </div>

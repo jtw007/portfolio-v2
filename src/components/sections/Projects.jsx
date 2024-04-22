@@ -42,4 +42,3 @@ const Projects = () => {
 }
 
 export default Projects
-// style={{backgroundImage:`url(${project.img})`}}
