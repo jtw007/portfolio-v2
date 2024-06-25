@@ -15,6 +15,13 @@ export default {
       'xl': '1280px',
       '2xl': '1920px',
     },
+    borderRadius: {
+      'none': '0',
+      'sm': '.125rem',
+      'default': '15px',
+      'lg': '.5rem',
+      'full': '9999px',
+    },
   },
   plugins: [],
 }

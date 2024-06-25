@@ -8,7 +8,7 @@ const Home = () => {
     return (
         <div className='body'>
             <NavBar />
-            <Hero />
+            {/* <Hero /> */}
             <About /> 
             <Projects />
             <Contact />

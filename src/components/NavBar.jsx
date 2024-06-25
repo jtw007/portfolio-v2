@@ -15,12 +15,12 @@ const NavBar = () => {
     }
     
     return (
-        <div className='flex justify-between items-center h-24 w-full mx-auto px-10 shadow-lg bg-[#1d6896] text-white xs:fixed xl:static'>
+        <div className='flex justify-between items-center h-24 w-full mx-auto px-10 shadow-lg bg-[#1d6896] text-white'>
             <a href='/'>
                 <div className='flex flex-row'>
                     <img 
                         src={Icon} 
-                        className='h-[40px] w-[40px]'
+                        className='h-[50px] w-[50px]'
                     />
                     {/* <h1 className='text-3xl'>joshwu.dev</h1> */}
                 </div>
@@ -57,7 +57,7 @@ const NavBar = () => {
                     duration={500}
                 >Contact</Link>
 
-                <a className='p-4 text-lg border' href='https://drive.google.com/file/d/1svi6e7Y2bkKLss2KFIgZzzuLBNNOzeH_/view?usp=drive_link' target='_blank' rel='noopener noreferrer'>Resume</a>
+                <a className='p-4 text-lg border rounded-default' href='https://drive.google.com/file/d/1svi6e7Y2bkKLss2KFIgZzzuLBNNOzeH_/view?usp=drive_link' target='_blank' rel='noopener noreferrer'>Resume</a>
             </ul>
 
             {/* hamburger menu navbar, only shows on small screens */}
@@ -100,7 +100,7 @@ const NavBar = () => {
                 >Contact</Link>
                 
                 <div className='w-full flex justify-center'>
-                    <a className='py-5 text-center w-1/4 border' href='https://drive.google.com/file/d/1svi6e7Y2bkKLss2KFIgZzzuLBNNOzeH_/view?usp=drive_link' target='_blank' rel='noopener noreferrer'>Resume</a>
+                    <a className='py-5 text-center w-1/4 border rounded-default' href='https://drive.google.com/file/d/1svi6e7Y2bkKLss2KFIgZzzuLBNNOzeH_/view?usp=drive_link' target='_blank' rel='noopener noreferrer'>Resume</a>
                 </div>
             </ul>
 
