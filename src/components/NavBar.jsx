@@ -15,7 +15,7 @@ const NavBar = () => {
     }
     
     return (
-        <div className='flex justify-between items-center h-24 w-full mx-auto px-10 shadow-lg bg-[#1d6896] text-white xs:fixed xl:static'>
+        <div className='flex justify-between items-center h-24 w-full mx-auto px-10 shadow-lg bg-[#1d6896] text-white'>
             <a href='/'>
                 <div className='flex flex-row'>
                     <img 
