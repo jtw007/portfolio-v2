@@ -4,8 +4,8 @@ import {
   BrowserRouter as Router,
 } from 'react-router-dom'
 
+// import './index.css'
 // components/pages import
-import NavBar from './components/NavBar'
 import Home from './components/sections/Home'
 import ProjectDetails from './components/sections/ProjectDetails'
 
@@ -14,7 +14,6 @@ function App() {
   return (
       <div className='App'>
         <Router>
-          {/* <NavBar /> */}
           <div className='routes'>
             <Routes>
               <Route path='/' element={ <Home /> } />
