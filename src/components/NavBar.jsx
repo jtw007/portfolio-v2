@@ -57,7 +57,7 @@ const NavBar = () => {
                     duration={500}
                 >Contact</Link>
 
-                <a className='p-4 text-lg border rounded-default' href='https://drive.google.com/file/d/1svi6e7Y2bkKLss2KFIgZzzuLBNNOzeH_/view?usp=drive_link' target='_blank' rel='noopener noreferrer'>Resume</a>
+                <a className='p-4 text-lg border rounded-default' href='https://docs.google.com/document/d/1QaHI997DM1theqIRrbxC43CIP6p8sp1PEMo4gFGcJrA/edit?usp=sharing' target='_blank' rel='noopener noreferrer'>Resume</a>
             </ul>
 
             {/* hamburger menu navbar, only shows on small screens */}
