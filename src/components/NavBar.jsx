@@ -58,7 +58,7 @@ const NavBar = () => {
                     duration={500}
                 >Contact</Link>
 
-                <a className='p-4 text-lg' href='https://docs.google.com/document/d/1QaHI997DM1theqIRrbxC43CIP6p8sp1PEMo4gFGcJrA/edit?usp=sharing' target='_blank' rel='noopener noreferrer'>Resume</a>
+                <a className='p-4 text-lg' href='https://docs.google.com/document/d/181rJFq0j1-psu2UMkNRHt8BH6y1ML5p-mI5dh6Retck/edit?usp=sharing' target='_blank' rel='noopener noreferrer'>Resume</a>
             </ul>
 
             {/* hamburger menu navbar, only shows on small screens */}
@@ -66,7 +66,7 @@ const NavBar = () => {
                 {!nav ? <AiOutlineMenu size={20} /> : <AiOutlineClose size={20} />}
             </div>
 
-            <ul className={nav ? 'fixed top-24 right-0 w-[75%] h-full overflow-hidden ease-in-out duration-500 border-r-black-900 bg-[#1d6896] md:hidden' : 'ease-in-out duration-500 fixed right-[-100%]'}>
+            <ul className={nav ? 'fixed top-24 right-0 w-[75%] h-full overflow-hidden ease-in-out duration-500 border-r-black-900 bg-[#15567f] md:hidden' : 'ease-in-out duration-500 fixed right-[-100%]'}>
                 <Link
                     className='py-7 flex justify-center'
                     onClick={closeNav}
@@ -101,7 +101,7 @@ const NavBar = () => {
                 >Contact</Link>
                 
                 <div className='w-full flex justify-center'>
-                    <a className='py-5 text-center' href='https://drive.google.com/file/d/1svi6e7Y2bkKLss2KFIgZzzuLBNNOzeH_/view?usp=drive_link' target='_blank' rel='noopener noreferrer'>Resume</a>
+                    <a className='py-5 text-center' href='https://docs.google.com/document/d/181rJFq0j1-psu2UMkNRHt8BH6y1ML5p-mI5dh6Retck/edit?usp=sharing' target='_blank' rel='noopener noreferrer'>Resume</a>
                 </div>
             </ul>
 
